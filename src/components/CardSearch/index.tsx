@@ -9,7 +9,7 @@ import {
   StarRating,
   TtileMovie,
   VoteAverage,
-} from "./style";
+} from "./styles";
 
 interface Props {
   title: string;
@@ -30,7 +30,7 @@ export function CardSearch({ data }: PropsMovies) {
   return (
     <Container
       onPress={() =>
-        navigation.navigate("InfoMovies", {
+        navigation.navigate("MoviesDescription", {
           title: data.title,
           overview: data.overview,
           backdrop_path: data.backdrop_path,

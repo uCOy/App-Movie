@@ -2,7 +2,7 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { Home } from "../screens/Home";
 import { Search } from "../screens/Search";
-import { InfoMovies } from "../screens/InfoMovies";
+import { MoviesDescription } from "../screens/MoviesDescription";
 
 const { Navigator, Screen } = createStackNavigator();
 
@@ -15,10 +15,8 @@ export function AppRoutes() {
       }}
     >
       <Screen name="Home" component={Home} />
-
       <Screen name="Search" component={Search} />
-
-      <Screen name="InfoMovies" component={InfoMovies} />
+      <Screen name="MoviesDescription" component={MoviesDescription} />
     </Navigator>
   );
 }

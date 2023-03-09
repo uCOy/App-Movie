@@ -14,7 +14,7 @@ import {
   SearchMovieText,
   SearchText,
   SearchTextArea,
-} from "./style";
+} from "./styles";
 import { Tabs } from "../../components/Tabs";
 
 const { API_KEY } = process.env;
@@ -77,7 +77,7 @@ export function Search() {
           onPress={() => navigation.goBack()}
         >
           <IconGoBack
-            name="left"
+            name="arrowleft"
           />
         </ButtonGoBack>
         <InputSearch
@@ -94,7 +94,9 @@ export function Search() {
         </ButtonSearch>
       </InputArea>
       {buscar === "" ? (
-        <SearchText>Filmes Recentes</SearchText>
+        <SearchTextArea>
+          <SearchText>Filmes Recentes</SearchText>
+        </SearchTextArea>
       ) : (
         <SearchTextArea
           style={{ flexDirection: "row", marginBottom: 10 }}

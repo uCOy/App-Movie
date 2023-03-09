@@ -10,7 +10,7 @@ import {
   InfoIcon,
   TextButtonAdd,
   TextButtonInfo,
-} from "./style";
+} from "./styles";
 
 interface Props {
   title: string;

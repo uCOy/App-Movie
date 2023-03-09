@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { FlatList,  useWindowDimensions } from "react-native";
 import { CardMovies } from "../../components/Card/CardMovies";
-import { SearchIcon } from "../../screens/Search/style";
+import { SearchIcon } from "../Search/styles";
 import { ListImages } from "../../components/ListImages";
 import api from "../../services/api";
 import {
@@ -14,7 +14,7 @@ import {
   Title,
   TitleMoviesInTheaters,
   ScrollView,
-} from "./style";
+} from "./styles";
 import { Tabs } from "../../components/Tabs";
 
 const { API_KEY } = process.env;
@@ -115,11 +115,11 @@ export function Home() {
           </MoviesInTheaters>
         </ScrollView>
       </Container>
-      {/* <Tabs
+      <Tabs
         onPress1={handleColorSelectionHome}
         onPress2={handleColorSelectionFavorite}
         isSelected={selectedColorFavorite}
-      /> */}
+      />
     </>
   );
 }

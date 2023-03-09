@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import { useWindowDimensions } from "react-native";
-import { AlignStar, Assessment, Container, ImageMovie, StarIcon, TtileMovie, VoteAverage } from "./style";
+import { AlignStar, Assessment, Container, ImageMovie, StarIcon, TtileMovie, VoteAverage } from "./styles";
 
 interface Props {
     title: string;
@@ -23,7 +23,7 @@ export function CardMovies({ data }: PropsMovies) {
         <Container
             activeOpacity={0.7}
             style={{ height: window.height <= 780 ? 250 : 270 }}
-            onPress={() => navigation.navigate("InfoMovies", {
+            onPress={() => navigation.navigate("MoviesDescription", {
                 title: data.title,
                 overview: data.overview,
                 backdrop_path: data.backdrop_path,

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
+import { RFValue } from "react-native-responsive-fontsize";
 import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 
@@ -30,6 +30,7 @@ export const InputSearch = styled.TextInput.attrs({
 
 export const SearchTextArea = styled.View`
   flex-wrap: wrap;
+  margin-bottom: 10px;
 `;
 
 export const ButtonSearch = styled.TouchableOpacity`

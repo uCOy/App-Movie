@@ -1,17 +1,21 @@
-import styled from "styled-components";
+import styled, {css}  from "styled-components";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import { AntDesign } from "@expo/vector-icons";
 
 export const Container = styled.View`
   flex: 1;
-  background-color: #0d0d0d;
+  background-color: #222222;
 `;
 
 export const Header = styled.View`
-  height: 35%;
+  height: 45%;
 `;
 
-export const BackgroundHeader = styled.Image``;
+export const BackgroundHeader = styled.Image.attrs({
+  blurRadius: 3,
+})`
+
+`;
 
 export const ButtonClose = styled.TouchableOpacity`
   position: absolute;
@@ -25,23 +29,29 @@ export const IconClose = styled(AntDesign)`
 `;
 
 export const InfosMovie = styled.View`
-  justify-content: space-between;
-  flex-direction: row;
-  padding-left: 20px;
+  /* justify-content: center; */
+  align-items: center;
+  /* flex-direction: row; */
+  /* padding-left: 20px; */
 `;
 
-export const ImageArea = styled.Image``;
+export const ImageArea = styled.Image`
+
+`;
 
 export const TitleAndDescription = styled.View`
-  flex: 1;
+  /* flex: 1; */
   flex-direction: column;
-  margin: 20px;
+  padding-bottom: 20px;
 `;
 
 export const Title = styled.Text`
-  font-size: 18px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 28px;
   color: #fff;
   font-weight: bold;
+  /* padding-bottom: 10px; */
 `;
 
 export const Assessment = styled.View`
@@ -49,16 +59,17 @@ export const Assessment = styled.View`
   flex-direction: row;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 20px;
 `;
 
 export const VoteAverage = styled.Text`
-  font-size: 12px;
+  font-size: 22px;
   color: #fff;
 `;
 
 export const StarIcon = styled(AntDesign)`
   align-items: center;
-  font-size: 12px;
+  font-size: 25px;
   color: #eead2d;
 `;
 
@@ -73,6 +84,7 @@ export const ButtonFavorite = styled.TouchableOpacity`
   border-radius: 50px;
   flex-direction: row;
   align-items: center;
+  margin-left: 20px;
   justify-content: center;
   padding: 2px;
 `;
@@ -91,10 +103,11 @@ export const TextButtonFavorite = styled.Text`
 `;
 
 export const Synopsis = styled.View`
-  padding: 20px;
+  padding: 0px 20px 0px 20px;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 `;
 
 export const TiltleSynopsis = styled.Text`
@@ -113,6 +126,7 @@ export const ReleaseDateArea = styled.View`
 flex-wrap: wrap;
   flex-direction: row;
   margin-bottom: 20px;
+  margin-left: 20px;
 `;
 
 export const TitleReleaseDate = styled.Text`

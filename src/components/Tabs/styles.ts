@@ -3,6 +3,7 @@ import { Entypo } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 
 export const Container = styled.View`
+  /* background-color: #222 ; */
   background-color: transparent;
   position: absolute;
   padding: 5px;
