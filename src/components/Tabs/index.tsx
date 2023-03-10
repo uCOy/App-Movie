@@ -11,6 +11,7 @@ interface ButtonProps {
 }
 
 export function Tabs({ onPress1, onPress2, isSelected }: ButtonProps) {
+    const navigation = useNavigation();
     const window = useWindowDimensions();
 
     return (
@@ -29,7 +30,7 @@ export function Tabs({ onPress1, onPress2, isSelected }: ButtonProps) {
             >
                 <ButtonHome
                     activeOpacity={0.7}
-                    onPress={onPress1}
+                    onPress={() => navigation.navigate("Home")}
                 >
                     <IconHome
                         style={{ color: isSelected === false ? "#ccc" : "#fff" }}
@@ -43,7 +44,7 @@ export function Tabs({ onPress1, onPress2, isSelected }: ButtonProps) {
                 </ButtonHome>
                 <ButtonFavorite
                     activeOpacity={0.7}
-                    onPress={onPress2}
+                    onPress={() => navigation.navigate("Favorites")}
                 >
                     <IconFavorite
                         style={{ color: isSelected === true ? "#ccc" : "#fff" }}
