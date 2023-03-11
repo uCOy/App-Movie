@@ -21,7 +21,7 @@ export const TtileMovie = styled.Text`
   color: #fff;
   font-size: 16px;
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
 `;
 
 export const Assessment = styled.View`

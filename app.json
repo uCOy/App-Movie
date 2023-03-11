@@ -10,6 +10,18 @@
       "eas": {
         "projectId": "08018103-de3f-46ce-851c-3acf1aee7e22"
       }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000"
+      }
+    },
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#000",
+      "resizeMode": "cover"
     }
   }
 }
