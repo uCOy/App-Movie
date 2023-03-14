@@ -10,7 +10,6 @@ import { Container, Header, TitleFavorites } from "./styles";
 
 export function Favorites() {
   const navigation = useNavigation<HomeScreenNavigationProp>();
-
   const [selectedColorFavorite, setSelectedColorFavorite] = useState(false);
   const [favorites, setFavorites] = useState(true);
   const [data, setData] = useState([]);
@@ -41,7 +40,7 @@ export function Favorites() {
   return (
     <Container>
       <Header>
-        <TitleFavorites>Filmes Favoritos</TitleFavorites>
+        <TitleFavorites>Sua lista de favoritos</TitleFavorites>
       </Header>
       {data.length === 0 ? (
         <View
@@ -52,9 +51,9 @@ export function Favorites() {
             flexDirection: "column",
           }}
         >
-          <FontAwesome name="star-half-empty" size={50} color="#fff" style={{ marginBottom: 10 }} />
-          <Text style={{ textAlign: "center", color: "#fff", fontSize: 16 }}>
-            Você ainda não possui filmes marcados{"\n"}como favorito.
+          <FontAwesome name="star-half-empty" size={50} color="#FFFFFF" style={{ marginBottom: 10 }} />
+          <Text style={{ textAlign: "center", color: "#FFFFFF", fontSize: 16 }}>
+            Você ainda não possui filmes {"\n"} favoritos.
           </Text>
         </View>
       ) : (
@@ -65,7 +64,6 @@ export function Favorites() {
           renderItem={({ item }) => <CardFavorites data={item} />}
         />
       )}
-
       <Tabs
         onPress1={handleColorSelectionHome}
         onPress2={handleColorSelectionFavorite}

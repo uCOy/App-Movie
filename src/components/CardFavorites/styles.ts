@@ -1,6 +1,8 @@
 import { AntDesign } from "@expo/vector-icons";
 import { RFValue } from "react-native-responsive-fontsize";
 import styled from "styled-components";
+import { TouchableOpacity } from 'react-native';
+import { MaterialIcons } from '@expo/vector-icons';
 
 export const Container = styled.View`
   justify-content: space-between;
@@ -76,3 +78,26 @@ export const TextButtonFavorite = styled.Text`
   text-align: center;
   margin-left: 16px;
 `;
+
+
+
+
+
+
+export const Button = styled(TouchableOpacity)`
+    margin-left: 50px;
+`
+export const StarFavorite =  styled(MaterialIcons)`
+  color:  #B22222;
+  font-size:24px
+`
+export const Header = styled.View`
+  flex-direction: row;
+`
+export const AlingHeader = styled.View`
+   margin-left: 15px;
+`
+
+export const Description = styled.Text`
+      color: #fff;
+`
