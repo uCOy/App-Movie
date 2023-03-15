@@ -19,6 +19,7 @@ export function AppRoutes() {
       <Screen name="Search" component={Search} />
       <Screen name="Favorites" component={Favorites} />
       <Screen name="MoviesDescription" component={MoviesDescription} />
+      <Screen name="Favorites" component={Favorites} />
     </Navigator>
   );
 }

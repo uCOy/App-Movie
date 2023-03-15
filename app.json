@@ -3,12 +3,25 @@
     "name": "App-filmes",
     "slug": "App-filmes",
     "version": "1.0.0",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#000",
+      "resizeMode": "cover"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#000"
+      }
+    },
+    "owner": "richardaroba",
     "extra": {
       "eas": {
-        "projectId": "08018103-de3f-46ce-851c-3acf1aee7e22"
+        "projectId": "e9827e31-6198-451d-9cb9-bdc822c903ff"
       }
     }
   }

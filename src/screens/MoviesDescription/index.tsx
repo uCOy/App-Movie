@@ -65,7 +65,7 @@ export function MoviesDescription() {
 
   const date = release_date;
   const dateObj = new Date(date);
-
+  
   const day = dateObj.getDate();
   const month = dateObj.getMonth() + 1;
   const year = dateObj.getFullYear();
@@ -126,7 +126,6 @@ export function MoviesDescription() {
 
   useEffect(() => {
     const moviesRef = firestore().collection("Movies");
-
     moviesRef.doc(`${id}`).onSnapshot((doc) => {
       const favorite = doc.exists && doc.data()?.favorite;
       setFavorites(favorite || false);

@@ -45,5 +45,5 @@ export const TitleMoviesInTheaters = styled.Text`
   color: #fff;
   font-size: 26px;
   font-weight: bold;
-  margin: 10px 0;
+  margin-top: 10px;
 `;

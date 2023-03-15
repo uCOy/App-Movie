@@ -18,7 +18,12 @@ import {
 import { Tabs } from "../../components/Tabs";
 
 // const { API_KEY } = process.env;
+<<<<<<< HEAD
 const API_KEY = 'f83be4048b1168ca0e1a5ee1840dbe3e';
+=======
+const API_KEY = 'api_key=f83be4048b1168ca0e1a5ee1840dbe3e';
+
+>>>>>>> 79f22ef953eca629b1444e87a56f11b40ca103e0
 const LANGUAGE = "pt-BR";
 
 export function Search() {
